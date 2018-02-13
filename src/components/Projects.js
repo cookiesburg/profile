@@ -22,19 +22,19 @@ export default class Projects extends Component {
     var projects =  [
       {
         title: 'SoupLady',
-        description: 'A community-driven approach to better food',
+        description: 'An online platform that connects community members and with homecooks in their area in order to provide healthy, community-driven food solutions while creating an economic engine for the community.',
         img: '/img/souplady.png',
         url: 'https://protected-shelf-23688.herokuapp.com',
       },
       {
-        title: 'Golf',
-        description: 'Personal handicap tracking application',
+        title: 'Golf Tracker',
+        description: 'A personal application that stores information regarding a player\'s scoring history, courses played and current handicap index',
         img: '/img/souplady.png',
         url: 'https://protected-shelf-23688.herokuapp.com',
       },
       {
         title: 'Forty-Five',
-        description: 'Literary and arts collective',
+        description: ' A literary and arts collective and online journal',
         img: '/img/fortyfive.png',
         url: 'https://protected-shelf-23688.herokuapp.com',
       }
