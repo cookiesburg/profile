@@ -17,11 +17,8 @@ export default class About extends Component {
           <div>
             <h4>my tech</h4>
             <p>
-              I started programming with Ruby on Rails but have since shifted my focus to front end
-              development. I am currently trying to master React and React with Redux as well as
-              exploring the wonders of functional programming. I am a techno optimist who beleives
-              most of the worlds problems can be solved with good ideas and well designed pieces of
-              technology to accompany them.
+              I started programming with Ruby on Rails but have more recently been working
+              in the React ecosystem.
             </p>
           </div>
           <div>
@@ -40,6 +37,10 @@ export default class About extends Component {
               <li>JQuery</li>
               <li>Bootstrap</li>
               <li>REST API"'s"</li>
+            </ul>
+            <h4>Other Skills</h4>
+            <ul>
+              <li>Git</li>
             </ul>
           </div>
         </div>

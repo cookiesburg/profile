@@ -23,17 +23,20 @@ export default class Projects extends Component {
       {
         title: 'SoupLady',
         description: 'A community-driven approach to better food',
-        img: '/img/souplady.png'
+        img: '/img/souplady.png',
+        url: 'https://protected-shelf-23688.herokuapp.com',
       },
       {
         title: 'Golf',
         description: 'Personal handicap tracking application',
-        img: '/img/souplady.png'
+        img: '/img/souplady.png',
+        url: 'https://protected-shelf-23688.herokuapp.com',
       },
       {
         title: 'Forty-Five',
         description: 'Literary and arts collective',
-        img: '/img/fortyfive.png'
+        img: '/img/fortyfive.png',
+        url: 'https://protected-shelf-23688.herokuapp.com',
       }
     ];
 
@@ -46,6 +49,8 @@ export default class Projects extends Component {
               <div className='project-thumb'
                    onClick = {this.selectProject.bind(null, project)}>
                 <img src={process.env.PUBLIC_URL + project.img} alt='landing page'/>
+
+                <a href={project.url}>Visit {project.title}</a>
               </div>
             );
           })}
