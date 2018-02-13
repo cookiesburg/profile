@@ -22,15 +22,18 @@ export default class Projects extends Component {
     var projects =  [
       {
         title: 'SoupLady',
-        description: 'A community-driven approach to better food'
+        description: 'A community-driven approach to better food',
+        img: '/img/souplady.png'
       },
       {
         title: 'Golf',
-        description: 'Personal handicap tracking application'
+        description: 'Personal handicap tracking application',
+        img: '/img/souplady.png'
       },
       {
         title: 'Forty-Five',
-        description: 'Literary and arts collective'
+        description: 'Literary and arts collective',
+        img: '/img/fortyfive.png'
       }
     ];
 
@@ -42,7 +45,7 @@ export default class Projects extends Component {
             return (
               <div className='project-thumb'
                    onClick = {this.selectProject.bind(null, project)}>
-                {project.title}
+                <img src={process.env.PUBLIC_URL + project.img} alt='landing page'/>
               </div>
             );
           })}

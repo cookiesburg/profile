@@ -89,6 +89,13 @@
 
   .project-thumb {
     border: 1px solid black;
+    height: 30%;
+    width: auto;
+  }
+
+  .project-thumb > img {
+    height: 100%;
+    width: auto;
   }
 
   .project-details {
