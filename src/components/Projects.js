@@ -4,7 +4,8 @@ export default class Projects extends Component {
   constructor() {
     super();
     this.state =  {
-                    projectDetail: 'Please select a project'
+                    projectDetail: 'Please select a project',
+                    url: ''
                   };
 
     this.selectProject = this.selectProject.bind(this);
@@ -13,7 +14,8 @@ export default class Projects extends Component {
   selectProject(project) {
     this.setState(() => {
       return {
-          projectDetail: project.description
+          projectDetail: project.description,
+          url: project.url
       }
     });
   }
@@ -49,15 +51,20 @@ export default class Projects extends Component {
               <div className='project-thumb'
                    onClick = {this.selectProject.bind(null, project)}>
                 <img src={process.env.PUBLIC_URL + project.img} alt='landing page'/>
-
-                <a href={project.url}>Visit {project.title}</a>
               </div>
             );
           })}
         </div>
 
         <div className='project-details'>
-          {this.state.projectDetail}
+          <div>{this.state.projectDetail}</div>
+          <br/>
+          {
+            this.state.url === '' || this.state.url === null ?
+              <div></div>
+            :
+            <a href={this.state.url}>VISIT</a>
+          }
         </div>
 
       </div>
