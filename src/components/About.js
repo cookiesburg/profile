@@ -4,43 +4,29 @@ export default class About extends Component {
   render() {
     return(
       <div className='about-me'>
-          <div className='card'>
-            <div className='side'><h2>ABOUT TOM</h2></div>
-            <div className='side back'>
+          <div className='about-box'>
+              <h2>A Little About Me</h2>
               <p>
-                I am a self-taught programmer with previous career experience in international
-                travel, international education and mixology. I started learning to programmer
-                because I wanted to turn interesting ideas and concepts into working applications.
+                I am a self-taught Full-Stack Web Developer.
+                I am currently developing my own web applications while I continue to explore and
+                learn more technologies.
+                Prior to programming, I worked in the fields of international travel, international
+                education and hospitality. When I`m not working I like to enjoy the finer points in life -
+                golf, big sandwiches, mountain biking, taking pictures, indian food and good company.
               </p>
-            </div>
           </div>
 
-          <div className='card'>
-            <div className='side'><h2>TECHNOLOGIES</h2></div>
-            <div className='side back'>
-              <h4>BACK END</h4>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-              </ul>
-              <h4>FRONT END</h4>
-              <ul>
-                <li>React</li>
-                <li>Javascript</li>
-                <li>CSS</li>
-                <li>HTML5</li>
-                <li>JQuery</li>
-                <li>Bootstrap</li>
-                <li>REST API"'s"</li>
-              </ul>
-              <h4>OTHER</h4>
-              <ul>
-                <li>Git</li>
-              </ul>
-            </div>
-          </div>
+          <div className='about-box'>
+            <h2>Technologies</h2>
+            <p>
+                <strong>BACK END: </strong>Ruby on Rails, PHP, PostgreSQL, MySQL
+                <br/>
+                <strong>FRONT END: </strong>React.js, ES6, Responsive Design, REST API`s, WordPress, Bootstrap, JQuery, CSS, HTML5, Bootstrap
+                <br/>
+                <strong>OTHER: </strong>Git
+            </p>
         </div>
+      </div>
     );
   }
 }
