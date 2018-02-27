@@ -28,12 +28,7 @@ export default class Projects extends Component {
         img: '/img/SoupLady-new copy.png',
         url: 'https://protected-shelf-23688.herokuapp.com',
       },
-      {
-        title: 'Golf Tracker',
-        description: 'A personal application that stores information regarding a player\'s scoring history, courses played and current handicap index',
-        img: '/img/handicap.png',
-        url: '',
-      },
+  
     ];
 
     return(
